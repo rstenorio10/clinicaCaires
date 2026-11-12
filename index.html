@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caires Clínica Odontológica | Dra. Gabriele Caires</title>
+  
+  <!-- Tipografias Premium: Cormorant Garamond (Logo/Títulos) & Plus Jakarta Sans (UI Moderna) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       BOTÃO FLUTUANTE DE WHATSAPP (ACOMPANHA O SCROLL)
+       ========================================================= -->
+  <a 
+    href="https://wa.me/5511930000000?text=Ol%C3%A1%2C%20Dra.%20Gabriele!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20atendimentos%20na%20Caires%20Cl%C3%ADnica%20Odontol%C3%B3gica." 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="whatsapp-float" 
+    aria-label="Falar com a Dra. Gabriele Caires no WhatsApp"
+  >
+    <span class="whatsapp-tooltip">Falar com a Clínica</span>
+    <span class="whatsapp-pulse"></span>
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.031 2C6.508 2 2.023 6.485 2.023 12.008c0 1.766.461 3.49 1.337 5.011L2 22l5.125-1.344a9.956 9.956 0 0 0 4.906 1.292h.004c5.522 0 10.008-4.485 10.008-10.008 0-2.674-1.041-5.188-2.932-7.079A9.935 9.935 0 0 0 12.031 2zm5.828 14.289c-.246.693-1.434 1.324-1.988 1.408-.512.077-1.158.11-1.871-.117-.434-.138-.99-.322-1.703-.63-2.996-1.293-4.953-4.312-5.103-4.512-.15-.2-1.219-1.621-1.219-3.092 0-1.471.771-2.194 1.045-2.493.274-.299.598-.374.797-.374.199 0 .399.002.573.01.184.009.43-.07.673.513.249.598.847 2.069.922 2.219.075.15.125.324.025.524-.1.2-.15.324-.299.499-.15.175-.314.39-.449.524-.15.15-.306.312-.131.611.175.299.776 1.28 1.666 2.073 1.145 1.021 2.11 1.337 2409 1.487.299.15.474.125.648-.075.175-.2.748-.873.947-1.172.2-.299.399-.249.673-.15.274.1 1.745.823 2.044.972.299.15.499.224.573.349.075.125.075.723-.171 1.416z"/>
+    </svg>
+  </a>
+
+  <!-- =========================================================
+       PRIMEIRA SECTION: HERO & NAVEGAÇÃO PRINCIPAL
+       ========================================================= -->
+  <section id="inicio" class="hero-facade">
+    
+    <div class="facade-bg-grid"></div>
+    <div class="ambient-glow glow-navy"></div>
+    <div class="ambient-glow glow-royal" id="mouse-glow"></div>
+    <div class="ambient-glow glow-gold"></div>
+
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        
+        <a href="#inicio" class="brand-logo" aria-label="Caires Clínica Odontológica">
+          <div class="logo-wordmark">
+            <span class="brand-name">Caires</span>
+            <svg class="tooth-emblem" viewBox="0 0 90 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#F3E5AB" />
+                  <stop offset="50%" stop-color="#D4AF37" />
+                  <stop offset="100%" stop-color="#AA8220" />
+                </linearGradient>
+              </defs>
+              <path d="M18 32C12 18 24 8 38 14C44 16.5 50 16.5 56 14C70 8 82 18 76 32C71 44 68 58 63 76C60 85 53 85 50 75C47 64 43 64 40 75C37 85 30 85 27 76C22 58 19 44 18 32Z" 
+                    stroke="url(#goldGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M29 52H37M28 57H38M29 62H37M33 48V67" 
+                    stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="brand-sub">Clínica Odontológica</span>
+          <span class="brand-cro">Dra. Gabriele Caires • CRO/SP 156986</span>
+        </a>
+
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#inicio" class="nav-link active" data-text="Início">Início</a></li>
+            <li><a href="#agendamento" class="nav-link" data-text="Agendamento">Agendamento</a></li>
+            <li><a href="#tratamentos" class="nav-link" data-text="Tratamentos">Tratamentos</a></li>
+            <li><a href="#sobre" class="nav-link" data-text="Sobre">Sobre</a></li>
+            <li><a href="#contato" class="nav-link" data-text="Contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+      </div>
+    </header>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="pulse-dot"></span>
+        Odontologia Estética & Reabilitação Avançada
+      </div>
+
+      <h1 class="hero-title reveal-up delay-1">
+        A arte de transformar sorrisos com <span class="gold-italic">precisão</span> e elegância.
+      </h1>
+
+      <p class="hero-description reveal-up delay-2">
+        Tecnologia digital, conforto absoluto e atendimento humanizado liderado pela <strong>Dra. Gabriele Caires</strong>. Um novo padrão em saúde bucal e estética orofacial.
+      </p>
+
+      <div class="hero-actions reveal-up delay-3">
+        <a href="#agendamento" class="cta-link-primary">
+          <span>Agendar Avaliação</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <a href="#tratamentos" class="cta-link-secondary">
+          Explorar Tratamentos
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Role para descobrir</span>
+      <div class="scroll-line"></div>
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       SEGUNDA SECTION: AGENDAMENTO CONCIERGE (BRANCO BRILHANTE)
+       ========================================================= -->
+  <section id="agendamento" class="booking-section">
+    <div class="booking-ambient-light"></div>
+
+    <div class="booking-container">
+      
+      <div class="booking-visual reveal-scroll">
+        <div class="visual-frame" id="tilt-frame">
+          <div class="frame-gold-border"></div>
+          
+          <div class="image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=900&q=85" 
+              alt="Dentista realizando atendimento odontológico especializado na Caires Clínica Odontológica" 
+              class="dentist-photo"
+              loading="lazy"
+            />
+            <div class="image-overlay-gradient"></div>
+          </div>
+
+          <div class="floating-glass-card top-card">
+            <div class="glass-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="glass-title">Dra. Gabriele Caires</span>
+              <span class="glass-subtitle">CRO/SP 156986 • Atendimento Exclusivo</span>
+            </div>
+          </div>
+
+          <div class="floating-glass-card bottom-card">
+            <span class="status-live"></span>
+            <p><strong>Agenda Aberta:</strong> Escolha o melhor horário sem filas ou espera.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-interactive reveal-scroll">
+        <div class="section-header">
+          <span class="section-eyebrow">Experiência Personalizada</span>
+          <h2 class="section-title">Reserve o seu <span class="gold-italic">momento</span> de cuidado.</h2>
+          <p class="section-subtitle">Selecione o tratamento, o dia e o horário de sua preferência em menos de 30 segundos.</p>
+        </div>
+
+        <div class="booking-glass-panel">
+          
+          <div class="step-indicator">
+            <div class="step-item active" data-step="1">
+              <span class="step-num">01</span>
+              <span class="step-label">Especialidade</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-item" data-step="2">
+              <span class="step-num">02</span>
+              <span class="step-label">Data & Hora</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-item" data-step="3">
+              <span class="step-num">03</span>
+              <span class="step-label">Confirmação</span>
+            </div>
+          </div>
+
+          <form id="concierge-form" novalidate>
+            
+            <div class="form-step active" id="step-1">
+              <label class="field-label">Qual procedimento você deseja realizar?</label>
+              <div class="treatment-grid">
+                <button type="button" class="treatment-chip selected" data-value="Avaliação & Check-up Digital">
+                  <span class="chip-dot"></span>
+                  <span>Avaliação & Check-up</span>
+                </button>
+                <button type="button" class="treatment-chip" data-value="Lentes de Contato Dental">
+                  <span class="chip-dot"></span>
+                  <span>Lentes de Contato</span>
+                </button>
+                <button type="button" class="treatment-chip" data-value="Implantes & Reabilitação">
+                  <span class="chip-dot"></span>
+                  <span>Implantes Dentários</span>
+                </button>
+                <button type="button" class="treatment-chip" data-value="Clareamento a Laser">
+                  <span class="chip-dot"></span>
+                  <span>Clareamento Laser</span>
+                </button>
+                <button type="button" class="treatment-chip" data-value="Alinhadores Invisíveis">
+                  <span class="chip-dot"></span>
+                  <span>Alinhadores Invisíveis</span>
+                </button>
+                <button type="button" class="treatment-chip" data-value="Harmonização Orofacial">
+                  <span class="chip-dot"></span>
+                  <span>Harmonização Facial</span>
+                </button>
+              </div>
+
+              <div class="step-footer right">
+                <button type="button" class="btn-next" data-next="2">
+                  <span>Escolher Data e Horário</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-step" id="step-2">
+              <label class="field-label">Selecione o dia ideal:</label>
+              <div class="date-scroller" id="date-scroller"></div>
+
+              <label class="field-label mt-1">Horários disponíveis:</label>
+              <div class="time-grid" id="time-grid">
+                <button type="button" class="time-slot" data-time="09:00">09:00</button>
+                <button type="button" class="time-slot selected" data-time="10:30">10:30</button>
+                <button type="button" class="time-slot" data-time="14:00">14:00</button>
+                <button type="button" class="time-slot" data-time="15:30">15:30</button>
+                <button type="button" class="time-slot" data-time="17:00">17:00</button>
+                <button type="button" class="time-slot" data-time="18:30">18:30</button>
+              </div>
+
+              <div class="step-footer between">
+                <button type="button" class="btn-back" data-prev="1">← Voltar</button>
+                <button type="button" class="btn-next" data-next="3">
+                  <span>Seus Dados</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-step" id="step-3">
+              <div class="summary-ticket">
+                <div class="ticket-row">
+                  <span>Procedimento:</span>
+                  <strong id="summary-treatment">Avaliação & Check-up Digital</strong>
+                </div>
+                <div class="ticket-row">
+                  <span>Data e Hora:</span>
+                  <strong id="summary-datetime">--/-- às 10:30</strong>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <input type="text" id="patient-name" required placeholder=" " autocomplete="name" />
+                <label for="patient-name">Seu Nome Completo</label>
+              </div>
+
+              <div class="input-group">
+                <input type="tel" id="patient-phone" required placeholder=" " maxlength="15" autocomplete="tel" />
+                <label for="patient-phone">Seu WhatsApp (com DDD)</label>
+              </div>
+
+              <div class="step-footer between">
+                <button type="button" class="btn-back" data-prev="2">← Alterar Horário</button>
+                <button type="submit" class="btn-confirm-gold">
+                  <span>Confirmar via WhatsApp</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       TERCEIRA SECTION: TRATAMENTOS (BENTO GRID 3D INTERATIVO)
+       ========================================================= -->
+  <section id="tratamentos" class="treatments-section">
+    <div class="treatments-ambient-glow"></div>
+
+    <div class="treatments-container">
+      
+      <div class="treatments-header reveal-scroll">
+        <div class="header-text">
+          <span class="treatments-eyebrow">Especialidades Clínicas</span>
+          <h2 class="treatments-title">Soluções completas para a <span class="gold-italic">harmonia</span> do seu sorriso.</h2>
+        </div>
+        <p class="treatments-lead">
+          Protocolos personalizados que unem estética natural, tecnologia minimamente invasiva e conforto em cada etapa.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        
+        <article class="bento-card bento-featured interactive-card reveal-scroll" style="--stagger: 0;">
+          <div class="card-sheen"></div>
+          <div class="card-bg-image">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=85" alt="Lentes de Contato Dental" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+          </div>
+
+          <div class="card-content">
+            <div class="card-top-meta">
+              <span class="meta-tag">Estética Avançada</span>
+              <span class="meta-badge">Mais Procurado</span>
+            </div>
+
+            <div class="card-bottom-info">
+              <h3>Lentes de Contato Dental</h3>
+              <p>Lâminas ultrafinas de porcelana ou resina esculpidas sob medida para corrigir cor, formato e proporção com naturalidade absoluta.</p>
+              
+              <div class="card-footer-action">
+                <span class="benefit-pill">Resultado em poucas sessões</span>
+                <button type="button" class="book-treatment-link" data-treatment="Lentes de Contato Dental">
+                  <span>Agendar avaliação</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="bento-card bento-tall interactive-card reveal-scroll" style="--stagger: 1;">
+          <div class="card-sheen"></div>
+          <div class="card-bg-image">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=85" alt="Implantes Dentários" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+          </div>
+
+          <div class="card-content">
+            <div class="card-top-meta">
+              <span class="meta-tag">Reabilitação</span>
+              <div class="card-icon-circle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 3v18M8 7h8M7 12h10M8 17h8" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="card-bottom-info">
+              <h3>Implantes Dentários</h3>
+              <p>Recupere a segurança ao mastigar e sorrir com implantes biocompatíveis de alta precisão e planejamento guiado.</p>
+              
+              <div class="card-footer-action">
+                <button type="button" class="book-treatment-link" data-treatment="Implantes & Reabilitação">
+                  <span>Agendar avaliação</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="bento-card interactive-card reveal-scroll" style="--stagger: 2;">
+          <div class="card-sheen"></div>
+          <div class="card-content solid-glass">
+            <div class="card-top-meta">
+              <div class="card-icon-circle gold">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="meta-tag">Estética</span>
+            </div>
+
+            <div class="card-bottom-info">
+              <h3>Clareamento a Laser</h3>
+              <p>Protocolo dessensibilizante que devolve a luminosidade natural do esmalte sem causar desconforto.</p>
+              
+              <div class="card-footer-action">
+                <button type="button" class="book-treatment-link" data-treatment="Clareamento a Laser">
+                  <span>Agendar sessão</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="bento-card interactive-card reveal-scroll" style="--stagger: 3;">
+          <div class="card-sheen"></div>
+          <div class="card-content solid-glass">
+            <div class="card-top-meta">
+              <div class="card-icon-circle royal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8z" />
+                  <path d="M8 13c1.2 1.5 2.6 2 4 2s2.8-.5 4-2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="meta-tag">Ortodontia Digital</span>
+            </div>
+
+            <div class="card-bottom-info">
+              <h3>Alinhadores Invisíveis</h3>
+              <p>Alinhamento dentário discreto, removível e previsível, sem braquetes metálicos e com máximo conforto.</p>
+              
+              <div class="card-footer-action">
+                <button type="button" class="book-treatment-link" data-treatment="Alinhadores Invisíveis">
+                  <span>Agendar avaliação</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="bento-card bento-wide interactive-card reveal-scroll" style="--stagger: 4;">
+          <div class="card-sheen"></div>
+          <div class="card-bg-image">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85" alt="Harmonização Orofacial" loading="lazy" />
+            <div class="card-gradient-overlay horizontal"></div>
+          </div>
+
+          <div class="card-content">
+            <div class="card-top-meta">
+              <span class="meta-tag">Estética Facial</span>
+            </div>
+
+            <div class="card-bottom-info">
+              <h3>Harmonização Orofacial</h3>
+              <p>Equilíbrio sutil entre o sorriso e os traços faciais com toxina botulínica, preenchimento labial e bioestimuladores.</p>
+              
+              <div class="card-footer-action">
+                <button type="button" class="book-treatment-link" data-treatment="Harmonização Orofacial">
+                  <span>Agendar consulta</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="bento-card interactive-card reveal-scroll" style="--stagger: 5;">
+          <div class="card-sheen"></div>
+          <div class="card-content solid-glass">
+            <div class="card-top-meta">
+              <div class="card-icon-circle gold">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="meta-tag">Saúde & Prevenção</span>
+            </div>
+
+            <div class="card-bottom-info">
+              <h3>Check-up & Profilaxia</h3>
+              <p>Limpeza ultrassônica, restaurações estéticas e tratamentos conservadores para manter seu sorriso saudável o ano inteiro.</p>
+              
+              <div class="card-footer-action">
+                <button type="button" class="book-treatment-link" data-treatment="Avaliação & Check-up Digital">
+                  <span>Agendar check-up</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       QUARTA SECTION: SOBRE A DOUTORA (RETRATO CENTRALIZADO LUXO)
+       ========================================================= -->
+  <section id="sobre" class="about-doctor-section">
+    <div class="about-bg-pattern"></div>
+    <div class="about-glow-center"></div>
+
+    <div class="about-container">
+      
+      <div class="about-header reveal-scroll">
+        <span class="about-eyebrow">Excelência & Propósito</span>
+        <h2 class="about-title">Conheça a <span class="gold-italic">Dra. Gabriele Caires</span></h2>
+        <p class="about-subtitle">
+          "Cada sorriso carrega uma história única. Meu compromisso é unir ciência, sensibilidade estética e acolhimento para revelar a sua melhor expressão."
+        </p>
+      </div>
+
+      <div class="about-showcase-grid">
+        
+        <div class="about-column left-col reveal-scroll" style="--stagger: 1;">
+          <div class="bio-glass-box">
+            <div class="cro-seal">
+              <span class="seal-dot"></span>
+              <span>Cirurgiã-Dentista • CRO/SP 156986</span>
+            </div>
+
+            <h3>Experiência pautada no detalhe e na naturalidade</h3>
+            <p>
+              Fundadora da <strong>Caires Clínica Odontológica</strong>, a Dra. Gabriele Caires dedica sua atuação clínica ao planejamento estético individualizado e à reabilitação oral de alta precisão.
+            </p>
+            <p>
+              Com olhar minucioso para as proporções faciais, conduz cada atendimento de forma tranquila, transparente e livre de pressa, garantindo que o paciente compreenda e participe de cada etapa da transformação do seu sorriso.
+            </p>
+
+            <div class="doctor-pillars">
+              <div class="pillar-item">
+                <span class="pillar-number">100%</span>
+                <span class="pillar-text">Planejamento Digital Individualizado</span>
+              </div>
+              <div class="pillar-divider"></div>
+              <div class="pillar-item">
+                <span class="pillar-number">+Estética</span>
+                <span class="pillar-text">Resultados Naturais e Harmônicos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-center-portrait reveal-scroll" style="--stagger: 0;">
+          <div class="portrait-halo"></div>
+          <div class="portrait-arch-border"></div>
+          
+          <div class="portrait-card" id="doctor-portrait-card">
+            <img 
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=90" 
+              alt="Dra. Gabriele Caires - Cirurgiã-Dentista na Caires Clínica Odontológica" 
+              class="doctor-main-photo"
+              loading="lazy"
+            />
+            <div class="portrait-vignette"></div>
+
+            <div class="portrait-caption">
+              <span class="caption-name">Dra. Gabriele Caires</span>
+              <span class="caption-role">Diretora Clínica • CRO/SP 156986</span>
+            </div>
+          </div>
+
+          <div class="doctor-signature">
+            <span>Gabriele Caires</span>
+          </div>
+        </div>
+
+        <div class="about-column right-col reveal-scroll" style="--stagger: 2;">
+          
+          <div class="credential-card">
+            <div class="cred-header">
+              <div class="cred-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4>Formação & Especializações</h4>
+            </div>
+            <ul class="cred-list">
+              <li>Graduação em Odontologia com ênfase em Estética</li>
+              <li>Aperfeiçoamento em Lentes de Contato Dental & Porcelanas</li>
+              <li>Especialização em Reabilitação Oral & Prótese</li>
+              <li>Certificação em Harmonização Orofacial Funcional e Estética</li>
+            </ul>
+          </div>
+
+          <div class="credential-card">
+            <div class="cred-header">
+              <div class="cred-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4>Procedimentos Realizados</h4>
+            </div>
+            <div class="procedure-tags">
+              <span>Lentes em Porcelana & Resina</span>
+              <span>Clareamento Dental a Laser</span>
+              <span>Implantes & Próteses</span>
+              <span>Alinhadores Estéticos</span>
+              <span>Harmonização Orofacial</span>
+              <span>Profilaxia & Prevenção</span>
+            </div>
+          </div>
+
+          <a href="#agendamento" class="doctor-cta-link">
+            <span>Agendar consulta com a Dra. Gabriele</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER INSTITUCIONAL DE ALTO PADRÃO
+       ========================================================= -->
+  <footer id="contato" class="luxury-footer">
+    
+    <!-- Faixa Superior Perolada (Convite Final & Diferenciais de Atendimento) -->
+    <div class="footer-pre-banner">
+      <div class="pre-banner-container reveal-scroll">
+        <div class="pre-banner-text">
+          <span class="pre-eyebrow">Atendimento Exclusivo & Pontual</span>
+          <h3>Pronto para viver uma nova experiência odontológica?</h3>
+        </div>
+
+        <div class="pre-banner-actions">
+          <a href="#agendamento" class="btn-pre-navy">
+            <span>Agendar Horário Online</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/5511930000000" target="_blank" rel="noopener noreferrer" class="btn-pre-outline">
+            Atendimento Concierge
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Corpo Principal do Footer (Azul Marinho Profundo & Ouro) -->
+    <div class="footer-main">
+      <div class="footer-grid">
+        
+        <!-- COLUNA 1: IDENTIDADE, REGISTRO E REDES SOCIAIS -->
+        <div class="footer-col brand-col">
+          <a href="#inicio" class="brand-logo footer-logo" aria-label="Caires Clínica Odontológica">
+            <div class="logo-wordmark">
+              <span class="brand-name">Caires</span>
+              <svg class="tooth-emblem" viewBox="0 0 90 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 32C12 18 24 8 38 14C44 16.5 50 16.5 56 14C70 8 82 18 76 32C71 44 68 58 63 76C60 85 53 85 50 75C47 64 43 64 40 75C37 85 30 85 27 76C22 58 19 44 18 32Z" 
+                      stroke="url(#goldGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M29 52H37M28 57H38M29 62H37M33 48V67" 
+                      stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="brand-sub">Clínica Odontológica</span>
+          </a>
+
+          <p class="footer-bio">
+            Odontologia estética, reabilitação oral e harmonização orofacial com rigor técnico, biossegurança hospitalar e cuidado individualizado.
+          </p>
+
+          <div class="footer-registry-badge">
+            <span class="registry-title">Responsável Técnica</span>
+            <strong>Dra. Gabriele Caires • CRO/SP 156986</strong>
+          </div>
+
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-circle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/5511930000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-circle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </a>
+            <a href="mailto:contato@cairesodontologia.com.br" aria-label="E-mail" class="social-circle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- COLUNA 2: NAVEGAÇÃO & ESPECIALIDADES -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#agendamento">Agendamento Online</a></li>
+            <li><a href="#tratamentos">Tratamentos & Especialidades</a></li>
+            <li><a href="#sobre">Sobre a Dra. Gabriele Caires</a></li>
+          </ul>
+
+          <h4 class="footer-heading mt-footer">Prazos & Garantias</h4>
+          <ul class="footer-info-list">
+            <li><strong>Confirmação de Agenda:</strong> Resposta em até 15 min em horário comercial.</li>
+            <li><strong>Planejamento Estético:</strong> Entrega digital em até 48h após avaliação.</li>
+            <li><strong>Urgências Odontológicas:</strong> Encaixe prioritário no mesmo dia.</li>
+          </ul>
+        </div>
+
+        <!-- COLUNA 3: HORÁRIOS DE ATENDIMENTO & CONTATO -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Horários de Atendimento</h4>
+          <ul class="hours-list">
+            <li>
+              <span>Segunda a Sexta</span>
+              <strong>08h30 às 19h30</strong>
+            </li>
+            <li>
+              <span>Sábados</span>
+              <strong>09h00 às 14h00</strong>
+            </li>
+            <li class="closed">
+              <span>Domingos e Feriados</span>
+              <span>Fechado</span>
+            </li>
+          </ul>
+
+          <h4 class="footer-heading mt-footer">Canais Diretos</h4>
+          <div class="contact-items">
+            <a href="tel:+551130000000" class="contact-line">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>(11) 3000-0000 • Recepção</span>
+            </a>
+            <a href="https://wa.me/5511930000000" target="_blank" rel="noopener noreferrer" class="contact-line">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              <span>(11) 93000-0000 • WhatsApp</span>
+            </a>
+            <a href="mailto:contato@cairesodontologia.com.br" class="contact-line">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>contato@cairesodontologia.com.br</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- COLUNA 4: ENDEREÇO, ESTRUTURA & LOCALIZAÇÃO -->
+        <div class="footer-col location-col">
+          <h4 class="footer-heading">Localização & Estrutura</h4>
+          
+          <div class="address-box">
+            <div class="address-pin">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Av. Paulista, 1000 • Conj. 142</strong>
+              <span>Bela Vista, São Paulo — SP • CEP 01310-100</span>
+            </div>
+          </div>
+
+          <div class="amenities-row">
+            <span>Estacionamento Valet</span>
+            <span>Acessibilidade</span>
+            <span>Sala VIP</span>
+          </div>
+
+          <!-- Mini Mapa Estilizado Dark Navy -->
+          <div class="footer-map-frame">
+            <iframe 
+              title="Localização Caires Clínica Odontológica"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-46.6580%2C-23.5665%2C-46.6480%2C-23.5605&amp;layer=mapnik&amp;marker=-23.5635%2C-46.6530" 
+              loading="lazy">
+            </iframe>
+            <a href="https://maps.google.com/?q=Av.+Paulista,+1000,+São+Paulo" target="_blank" rel="noopener noreferrer" class="map-route-btn">
+              Traçar Rota no Google Maps ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra Legal & Copyright -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">
+          © <span id="current-year">2026</span> <strong>Caires Clínica Odontológica</strong>. Todos os direitos reservados.
+        </p>
+
+        <div class="legal-links">
+          <span>Política de Privacidade (LGPD)</span>
+          <span class="dot-sep">•</span>
+          <span>Normas Éticas CFO/CROSP</span>
+          <button type="button" id="back-to-top" class="back-top-btn" aria-label="Voltar ao topo">
+            <span>Topo</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
